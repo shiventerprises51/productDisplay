@@ -95,14 +95,15 @@ function ContactUsPage() {
             </p>
             <ul className="list-unstyled contact-details">
               <li>
-                <i className="bi bi-geo-alt"></i> Address: Rz 487/407 Street No
-                - 15 G, Shivpuri, West Sagarpur, New Delhi, India
+                <i className="bi bi-geo-alt"></i> RZ - 63/404, Street No 15C,
+                Shivpuri, West Sagarpur, New Delhi ,India
               </li>
               <li>
-                <i className="bi bi-telephone"></i> Phone: +91 9958660231
+                <i className="bi bi-telephone"></i> Phone: +91 9717437131
               </li>
               <li>
-                <i className="bi bi-envelope"></i> Email: sukesh3333@gmail.com
+                <i className="bi bi-envelope"></i> Email:
+                ramadharkumar51@gmail.com
               </li>
             </ul>
 

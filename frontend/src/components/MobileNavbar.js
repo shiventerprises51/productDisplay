@@ -21,7 +21,7 @@ const MobileNavbar = () => {
             className="company-logo"
           />
         </div>
-        <div className="companyname">Shiv Collection</div>
+        <div className="companyname">Shiv Enterprises</div>
 
         {/* Hamburger Menu */}
         {!isHomepage && (
