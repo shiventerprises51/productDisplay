@@ -178,7 +178,7 @@ const Homepage = () => {
                     loading="eager"
                   />
                   <div className="slide-content">
-                    <div className="hero-title">Shiv Collection</div>
+                    <div className="hero-title">Shiv Enterprises</div>
                     <div className="hero-slogan">
                       We Make Better Things In A Better Way
                     </div>
