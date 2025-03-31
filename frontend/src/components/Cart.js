@@ -24,7 +24,7 @@ export default function Cart() {
     const totalAmount = getCartTotal();
     const message = `Order Details:\n${orderDetails}\n\nTotal: ₹${totalAmount}`;
     const encodedMessage = encodeURIComponent(message);
-    const adminWhatsAppNumber = "919958660231"; // Replace with actual number
+    const adminWhatsAppNumber = "9717437131"; // Replace with actual number
 
     window.open(
       `https://wa.me/${adminWhatsAppNumber}?text=${encodedMessage}`,
