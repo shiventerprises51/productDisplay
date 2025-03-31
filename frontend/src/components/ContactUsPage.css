@@ -1,0 +1,129 @@
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #F7FAFC; /* Soft background */
+    color: #1A202C; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+  }
+  .contact-hero-section{
+    background:rgb(47, 127, 255)!important;
+  }
+  .btn-info{
+    --bs-btn-bg: rgb(47, 127, 255) !important;
+    --bs-btn-border-color: rgb(47, 127, 255) !important;
+  }
+  .contact-container {
+    padding: 100px 20px; /* Adjust for navbar */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF; /* Contrast background for form */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h1 {
+    color: #2D3748;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .contact-container p {
+    color: #4A5568;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #2D3748;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #CBD5E0;
+    border-radius: 5px;
+    background-color: #F7FAFC;
+    color: #2D3748;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #4FD1C5;
+    outline: none;
+  }
+  
+  .submit-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #4FD1C5;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #319795; /* Darker accent for hover */
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #2D3748;
+    color: #F7FAFC;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer a {
+    color: #4FD1C5;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  /* Dynamic background for FrontPage */
+.contact-page {
+    background: radial-gradient(circle, #ffffff, #f9f9f9, #f2f2f2, #ececec);
+    min-height: 100vh;
+    padding-top: 0.5vh;
+    animation: light-gradient 40s ease-in-out infinite;
+  }
+  
+  /* Light gradient animation */
+  @keyframes light-gradient {
+    0% {
+      background: radial-gradient(circle, #ffffff, #f9f9f9, #f2f2f2, #ececec);
+    }
+    25% {
+      background: radial-gradient(circle, #f9f9f9, #f4f4f4, #eeeeee, #e9e9e9);
+    }
+    50% {
+      background: radial-gradient(circle, #f4f4f4, #f2f2f2, #ebebeb, #e6e6e6);
+    }
+    75% {
+      background: radial-gradient(circle, #f2f2f2, #ebebeb, #e6e6e6, #e1e1e1);
+    }
+    100% {
+      background: radial-gradient(circle, #ffffff, #f9f9f9, #f2f2f2, #ececec);
+    }
+  }
+  
+  .ContactNavbar{
+    padding-left: 10px;
+    padding-right: 10px;
+  }

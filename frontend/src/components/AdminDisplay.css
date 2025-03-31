@@ -1,0 +1,147 @@
+.Admin-product-grid{
+    display: flex;
+    flex-wrap: wrap; /* Prevent wrapping */
+    gap: 20px;
+    flex-direction: column;
+    background:  #d9dfe4a8;
+    margin: 20px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+}
+.Admin-subcategory-group{
+    padding-top: 1vh;
+    margin-top: 3vh;
+}
+.Admin-product-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-left: 20px;
+}
+.Admin-Display-Heading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+
+}
+.Admin-product-card{
+    width: 150px;
+    border: 1px solid #010101;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: white;
+    height: 400px;
+    
+}
+.Adminpage-content{
+    display: flex;
+}
+@media (max-width: 768px) {
+    .Adminpage-content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+.Adminpage-ctg-heading{
+    font-size: 2em; /* Adjust as needed */
+    font-weight: bold; /* Or normal, lighter, etc. */
+    text-align: center; /* Or left, right, justify */
+    color: #333; /* Dark gray text color */
+    padding: 10px; /* Add some padding around the text */
+}
+.Adminpage-ctg-heading.with-background { /* Add the class "with-background" to your HTML element */
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ccc; /* Subtle gray border */
+    border-radius: 5px; /* Slightly rounded corners */
+  }
+  
+  /* Example 2: With a gradient background */
+  .Adminpage-ctg-heading.gradient-bg { /* Add the class "gradient-bg" to your HTML element */
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Light blue gradient */
+    color: #007bff; /* Blue text color */
+  }
+  
+  /* Example 3: With a shadow */
+  .Adminpage-ctg-heading.with-shadow { /* Add the class "with-shadow" to your HTML element */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  }
+  
+  /* Example 4: Responsive Font Size */
+  .Adminpage-ctg-heading.responsive { /* Add the class "responsive" to your HTML element */
+    font-size: 2.5em; /* Larger on larger screens */
+  }
+  
+  
+  /* Example 5: Using a specific font */
+  .Adminpage-ctg-heading.custom-font { /* Add the class "custom-font" to your HTML element */
+    font-family: 'Arial', sans-serif; /* Replace with your desired font */
+  }
+  
+  
+  /*  Example 6: All Caps */
+  .Adminpage-ctg-heading.all-caps {
+    text-transform: uppercase;
+  }
+.Adminpage-sub-heading{
+    font-size: 1.5em; /* Slightly smaller than the main heading */
+    font-weight: 600; /* Semi-bold */
+    text-align: left; /* Or center, right, justify */
+    color: #555; /* Slightly lighter gray */
+    padding: 5px 10px; /* Some padding */
+}
+
+/* Example 1: With a subtle underline */
+.Adminpage-sub-heading.with-underline {
+    border-bottom: 2px solid #ddd; /* Light gray underline */
+    padding-bottom: 8px; /* Adjust padding to accommodate underline */
+  }
+  
+  /* Example 2: With a different font */
+  .Adminpage-sub-heading.custom-font {
+    font-family: 'Roboto', sans-serif; /* Replace with your desired font */
+    /* If the font isn't available, include a fallback font */
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+  }
+  
+  /* Example 3: With a background color and rounded corners */
+  .Adminpage-sub-heading.with-bg {
+    background-color: #f8f9fa; /* Very light gray background */
+    border-radius: 5px;
+    padding: 8px 12px;
+  }
+  
+  /* Example 4: With a subtle text shadow */
+  .Adminpage-sub-heading.with-shadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Example 5:  Uppercase with letter spacing */
+  .Adminpage-sub-heading.uppercase-spaced {
+      text-transform: uppercase;
+      letter-spacing: 1px; /* Add some space between letters */
+  }
+  
+  /* Example 6:  Vertical centering within a container (if needed) */
+  .Adminpage-sub-heading.vertical-center {
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center if needed */
+    height: 50px; /* Set a height for the container */
+  }
+  
+  /* Example 7: Responsive Font Size */
+  .Adminpage-sub-heading.responsive {
+    font-size: 1.6em; /* Larger on larger screens */
+  }
+  .admin-product-card-btn{
+    padding: 0px 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+  }

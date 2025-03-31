@@ -1,0 +1,160 @@
+/* Set the size of the page to A4 */
+@font-face {
+  font-family: "KadduBold";
+  src: url("Bold.ttf") format("truetype");
+}
+.a4-page {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  margin-bottom: 10mm;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3mm;
+  padding-left: 5mm;
+  padding-right: 5mm;
+  box-sizing: border-box; /* Include padding in the width and height */
+  background-color: white; /* Set background color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  page-break-after: always; /* Optional: Add a shadow for better visibility on screen */
+}
+
+.date-applicable {
+  text-align: center; /* Center-align the text */
+  font-family: KadduBold;
+  font-size: 10pt; /* Set font size to 10 */
+  /* margin-top: -20pt; */
+  color: red; /* Set text color to red */
+  margin: 0; /* Optional, to remove any default margins */
+  padding: 0; /* Optional, to remove any default padding */
+}
+
+.companyName {
+  margin-top: -3pt;
+  text-align: center;
+  font-family: KadduBold;
+  font-size: 26pt;
+  color: #0c4edd;
+  text-decoration: underline;
+}
+
+.phoneNumbers {
+  text-align: center;
+  font-family: KadduBold;
+  font-size: 18pt;
+  color: #2cd40a;
+  margin-top: -5pt;
+}
+
+.hintText {
+  text-align: center;
+  font-family: KadduBold;
+  font-size: 10pt;
+  color: red;
+  margin-top: -5pt;
+}
+
+.subcategoryName {
+  text-align: center;
+  font-family: KadduBold;
+  font-size: 15pt;
+  margin-top: -5pt;
+}
+
+.subPageNumber {
+  text-align: center;
+  font-family: KadduBold;
+  font-size: 10pt;
+  margin-top: -5pt;
+}
+
+.productgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* padding-right: 10pt; */
+  width: 200mm;
+}
+
+.productcardtoprint {
+  /* border-color: #8ac612; */
+  margin: 1pt;
+}
+
+.productcardtoprint {
+  /* position: absolute; */
+  border: 2.5pt solid #0c4edd;
+  text-align: center;
+  width: 246.6px; /* Ensure the container has a fixed width */
+  font-family: KadduBold;
+  height: 297px;
+
+  /* border: 1px solid #ccc;  */
+  /* padding-right: 2px;
+  padding-left: ; */
+  /* box-sizing: border-box; */
+}
+
+.productnametoprint {
+  font-family: KadduBold;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 23px;
+}
+.productnameline {
+  left: 0;
+  width: 240px; /* Full width of the card */
+  height: 1.5px;
+  background-color: #f63c05; /* Color of the line */
+}
+
+.productdetailline {
+  /* position: absolute; */
+  /* top: 3pt; */
+  margin-top: -2px;
+  left: 0;
+  width: 240px; /* Full width of the card */
+  height: 1.5px;
+  background-color: #f63c05; /* Color of the line */
+}
+
+.productdetailstoprint {
+  display: flex;
+  padding: 0px;
+}
+
+.productpricetoprint {
+  font-family: KadduBold;
+  font-size: 16px;
+  width: 90px;
+  border-right: 2px solid #f63c05;
+  color: #2cd40a;
+}
+
+.productsizetoprint {
+  align-content: center;
+  width: 150px;
+  font-family: KadduBold;
+  font-size: 15px;
+  color: #2cd40a;
+  /* width: 90px; */
+  /* border-right: 1.5px solid black; */
+}
+
+.productimagetoprint {
+  padding-top: 10px;
+  height: 232px;
+  width: 200px;
+}
+
+.pagenumbertoprint {
+  position: absolute;
+  bottom: 6mm;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: KadduBold;
+  font-size: 10pt;
+}

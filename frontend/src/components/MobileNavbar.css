@@ -1,0 +1,170 @@
+/* Custom Navbar for Small Devices */
+.custom-navbar {
+    background-color:transparent; /* Primary color */
+    color: #fff;
+    padding: 1vh 1vw;
+    padding-right: 6vw;
+    position: sticky;
+    top: 0;
+    z-index: 4000;
+   
+    width: 100vw !important;
+  }
+  .M-nav-btn{
+    font-size: 3vh;
+    background-color: transparent;
+    font-weight: 400;
+    font-family: "Chelsea Market", serif;
+    width: 100%;
+  }
+  .M-login-btn{
+    font-size: 3vh ;
+    background-color: transparent;
+    font-weight: 400;
+    font-family: "Chelsea Market", serif;
+    width: 100%;
+  }
+  .M-notactive{
+    border: none;
+
+  }
+  .M-active{
+    border: none;
+    background-color: #000000;
+    color: #fff;
+  }
+  .M-admin{
+    border: none;
+    color: green;
+  }
+
+  
+  /* Navbar container */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo container */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .company-logo {
+    height: 4vh;
+    width: auto;
+    cursor: pointer;
+  }
+  
+  /* Hamburger menu styling */
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    width: 9vw;
+    height: 20PX;
+    position: relative;
+  }
+  
+  .menu-icon span {
+    background-color: #000000;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #menu-checkbox {
+    display: none;
+  }
+  
+  #menu-checkbox:checked + .menu-icon span:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 8px;
+  }
+  
+  #menu-checkbox:checked + .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #menu-checkbox:checked + .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 8px;
+  }
+  
+  /* Dropdown menu */
+  .menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 8vh;
+    right: 4vw;
+    background-color: #fff;
+    border-radius: 3vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40vw;
+    text-align: left;
+    overflow: hidden;
+    z-index: 4000;
+  }
+  
+  .menu-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-dropdown ul li {
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .menu-dropdown ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-dropdown ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu-dropdown ul li a:hover {
+    background-color: #f8f9fa;
+    color: #0056b3;
+  }
+  
+  #menu-checkbox:checked ~ .menu-dropdown {
+    display: block;
+  }
+  
+  /* Small screen styling */
+  @media (min-width: 769px) {
+    .custom-navbar {
+      display: none;
+    }
+  }
+  
+
+  .companyname{
+    font-family: "Orbitron", serif;
+    font-size: 7vw;
+    font-size: 500;
+    color: #000000;
+    font-display: swap;
+  }
+  .custom-navbar.homepage .companyname {
+   padding-right: 14vw;
+  }
+  

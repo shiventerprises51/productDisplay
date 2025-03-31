@@ -1,0 +1,317 @@
+/* General Reset for Full-Screen Coverage */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overscroll-behavior: none;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa; /* Light background for better contrast */
+}
+
+/* Main Container */
+.app-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh; /* Ensure it covers the full height of the screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.frontpage-content{
+  display: flex;
+
+}
+
+
+
+
+/* Product Container */
+.product-scroll-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow products to wrap into new rows */
+  gap: 20px;
+  justify-content: flex-start; /* Align to the left */
+}
+
+/* Product Grid Wrapper */
+.product-grid-wrapper {
+  margin-bottom: 30px; /* Space between subcategories */
+}
+
+/* Product Card */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  flex: 0 1 250px; /* Fixed card width */
+  box-sizing: border-box;
+  padding: 8px;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: scale(1.03); /* Subtle scaling effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.product-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  background: #343a40;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap; /* Prevent wrapping */
+  gap: 20px;
+  overflow-x: auto; /* Add horizontal scrolling */
+
+  flex-direction: column;
+  background:  #d9dfe4a8;
+  margin: 20px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+/* Basic Styling for frontpage-ctg-heading */
+.frontpage-ctg-heading {
+  font-size: 2em; /* Adjust as needed */
+  font-weight: bold; /* Or normal, lighter, etc. */
+  text-align: center; /* Or left, right, justify */
+  color: #333; /* Dark gray text color */
+  padding: 10px; /* Add some padding around the text */
+}
+
+/* More Advanced Styling Examples */
+
+/* Example 1: With a background and border */
+.frontpage-ctg-heading.with-background { /* Add the class "with-background" to your HTML element */
+  background-color: #f0f0f0; /* Light gray background */
+  border: 1px solid #ccc; /* Subtle gray border */
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Example 2: With a gradient background */
+.frontpage-ctg-heading.gradient-bg { /* Add the class "gradient-bg" to your HTML element */
+  background: linear-gradient(to right, #e0eafc, #cfdef3); /* Light blue gradient */
+  color: #007bff; /* Blue text color */
+}
+
+/* Example 3: With a shadow */
+.frontpage-ctg-heading.with-shadow { /* Add the class "with-shadow" to your HTML element */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+/* Example 4: Responsive Font Size */
+.frontpage-ctg-heading.responsive { /* Add the class "responsive" to your HTML element */
+  font-size: 2.5em; /* Larger on larger screens */
+}
+
+
+/* Example 5: Using a specific font */
+.frontpage-ctg-heading.custom-font { /* Add the class "custom-font" to your HTML element */
+  font-family: 'Arial', sans-serif; /* Replace with your desired font */
+}
+
+
+/*  Example 6: All Caps */
+.frontpage-ctg-heading.all-caps {
+  text-transform: uppercase;
+}
+
+/* Basic Styling for frontpage-sub-heading */
+.frontpage-sub-heading {
+  font-size: 1.5em; /* Slightly smaller than the main heading */
+  font-weight: 600; /* Semi-bold */
+  text-align: left; /* Or center, right, justify */
+  color: #555; /* Slightly lighter gray */
+  padding: 5px 10px; /* Some padding */
+}
+
+/* More Advanced Styling Examples */
+
+/* Example 1: With a subtle underline */
+.frontpage-sub-heading.with-underline {
+  border-bottom: 2px solid #ddd; /* Light gray underline */
+  padding-bottom: 8px; /* Adjust padding to accommodate underline */
+}
+
+/* Example 2: With a different font */
+.frontpage-sub-heading.custom-font {
+  font-family: 'Roboto', sans-serif; /* Replace with your desired font */
+  /* If the font isn't available, include a fallback font */
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+/* Example 3: With a background color and rounded corners */
+.frontpage-sub-heading.with-bg {
+  background-color: #f8f9fa; /* Very light gray background */
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+/* Example 4: With a subtle text shadow */
+.frontpage-sub-heading.with-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Example 5:  Uppercase with letter spacing */
+.frontpage-sub-heading.uppercase-spaced {
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Add some space between letters */
+}
+
+/* Example 6:  Vertical centering within a container (if needed) */
+.frontpage-sub-heading.vertical-center {
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  justify-content: center; /* Horizontally center if needed */
+  height: 50px; /* Set a height for the container */
+}
+
+/* Example 7: Responsive Font Size */
+.frontpage-sub-heading.responsive {
+  font-size: 1.6em; /* Larger on larger screens */
+}
+
+
+.product-grid::-webkit-scrollbar {
+  height: 10px;
+}
+
+.product-grid::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.product-grid::-webkit-scrollbar-track {
+  background-color: #f8f9fa;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap:1vw 1vw;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 10px 0px;
+  padding-left: 30px;
+}
+
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background-color: #f8f9fa; /* Optional: Light background color */
+  flex-direction: column;
+}
+.loader p {
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4vh;
+}
+@media (max-width: 768px) {
+  .frontpage-content{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .app-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh; /* Ensure it covers the full height of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .app-container {
+    background: radial-gradient(circle, #ffffff, #f9f9f9, #f2f2f2, #ececec);
+    min-height: 100vh;
+    padding: 2vw;
+    padding-top: 0.5vh;
+    animation: light-gradient 40s ease-in-out infinite;
+  }
+
+ 
+
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Prevent wrapping */
+    gap: 20px;
+    overflow-x: auto; /* Add horizontal scrolling */
+    padding: 1px;
+    flex-direction: column;
+    margin: 0px 0px;
+  }
+  .product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 1vw;
+  }
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-color: #f8f9fa; /* Optional: Light background color */
+    flex-direction: column;
+  }
+  .loader p {
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4vh;
+  }
+  .loader img {
+    width: 90vw;
+  }
+
+ 
+}

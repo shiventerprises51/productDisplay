@@ -1,0 +1,41 @@
+.home-btn-login {
+  transition: all 0.3s ease-in-out;
+}
+
+.home-btn-login:hover {
+  background-color: #f0f0f0; /* Lighter background on hover */
+  background: rgb(69, 68, 68);
+  color: white !important;
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+.parentcontainer {
+  background: radial-gradient(circle, #ffffff, #f9f9f9, #f2f2f2, #ececec);
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 0.5vh;
+  animation: light-gradient 40s ease-in-out infinite;
+
+}
+
+/* Light gradient animation */
+@keyframes light-gradient {
+  0% {
+    background: radial-gradient(circle, #ffffff, #f9f9f9, #f2f2f2, #ececec);
+  }
+  25% {
+    background: radial-gradient(circle, #f9f9f9, #f4f4f4, #eeeeee, #e9e9e9);
+  }
+  50% {
+    background: radial-gradient(circle, #f4f4f4, #f2f2f2, #ebebeb, #e6e6e6);
+  }
+  75% {
+    background: radial-gradient(circle, #f2f2f2, #ebebeb, #e6e6e6, #e1e1e1);
+  }
+  100% {
+    background: radial-gradient(circle, #ffffff, #f9f9f9, #f2f2f2, #ececec);
+  }
+}
+.LoginBody { 
+  padding: 20px;
+}
+
