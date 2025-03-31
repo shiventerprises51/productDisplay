@@ -24,7 +24,7 @@ function ContactUsPage() {
             <h2>Send Us a Message</h2>
             <form
               target="_self"
-              action="https://formsubmit.co/29b014e707e1249ae2db29d48036b1c3"
+              action="https://formsubmit.co/7b08d1788b956889afb4e9fa9c5237df"
               method="POST"
               className="contact-form mt-4"
             >
@@ -33,7 +33,7 @@ function ContactUsPage() {
               <input
                 type="hidden"
                 name="_next"
-                value="https://product-d-iplay.vercel.app/Contact-success"
+                value="https://shiventerprises.vercel.app/Contact-success"
               />
 
               {/* Name and Phone Fields */}
