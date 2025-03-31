@@ -99,7 +99,8 @@ function ContactUsPage() {
                 Shivpuri, West Sagarpur, New Delhi ,India
               </li>
               <li>
-                <i className="bi bi-telephone"></i> Phone: +91 9717437131
+                <i className="bi bi-telephone"></i> Phone: +91 9717437131 , +91
+                8294712169
               </li>
               <li>
                 <i className="bi bi-envelope"></i> Email:
