@@ -234,7 +234,7 @@ const Homepage = () => {
             />
           </div>
           <div className="about-content">
-            <h2>About Shiv Collection</h2>
+            <h2>About Shiv Enterprises</h2>
             <p className="tagline">Crafting Excellence Since 2008</p>
             <p className="description">
               We are dedicated to creating premium quality products that blend
