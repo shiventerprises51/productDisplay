@@ -35,7 +35,7 @@ const CategoryFilter = ({
             <div className="ctg-btn-group" role="group">
               <div className="ctg-btns">
                 <button
-                  className={`ctg-btn ${
+                  className={`ctg-btn Ctg-btn-nav ${
                     selectedCategory === "All" ? "active" : ""
                   }`}
                   onClick={() => onCategoryChange("All")}
