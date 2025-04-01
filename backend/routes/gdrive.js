@@ -38,7 +38,7 @@ router.post("/", upload.single("catalogs"), async (req, res) => {
 
     const fileName = req.file.originalname;
     // const folderId = "1aaLCO1JxGhgTNwjvHwOcsIJ7EaW8eW6D"; // Replace with your Drive folder ID
-    const folderId = "1b75V5BG5ruuDQAj73s-_Q-Gov_GoYPR2";
+    const folderId = "1cpQww-7r8OUeOS1846KcJRApZ9SEFh6e";
     const authClient = await authorize();
 
     // ✅ Ensure file buffer is correctly passed
