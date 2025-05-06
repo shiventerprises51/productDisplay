@@ -56,7 +56,7 @@ const AdminUpdateCatalog = () => {
           pages,
           "SHIV ENTERPRISES",
           "1st April 2024",
-          "9958660231, 7838146412, 9717437131",
+          "9717437131, 8294712169",
           "Trademark:-Vidhata",
           0,
           true
