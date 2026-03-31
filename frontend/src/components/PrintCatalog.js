@@ -289,13 +289,13 @@ const PrintCatalog = () => {
   const [selectedCategories, setSelectedCategories] = useState([]); // Array to store selected category IDs
   const [companyName, setCompanyName] = useState("SHIV ENTERPRISES");
   const [mobileNumber, setMobileNumber] = useState("9717437131, 8294712169");
-  const [dateApplicaple, setDateApplicaple] = useState("1st April 2024");
+  const [dateApplicaple, setDateApplicaple] = useState("1st April 2026");
   const [priceFlag, setPriceFlag] = useState(true); // Whether to show prices
   const [imgFlag, setImgFlag] = useState(true);
   const [priceAdjustment, setPriceAdjustment] = useState(0); // Percentage adjustment
   const [minPrice, setMinPrice] = useState(0); // Minimum price
   const [maxPrice, setMaxPrice] = useState(1000); // Maximum price
-  const [hintText, setHintText] = useState("Trademark:-Vidhata");
+  const [hintText, setHintText] = useState("Trademark:-Bhagya Vidhata");
   const [isLoading, setIsLoading] = useState(false); // Loading state
   const [successMessage, setSuccessMessage] = useState(""); // Success message
 
