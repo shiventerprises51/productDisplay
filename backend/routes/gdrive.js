@@ -5,8 +5,12 @@ const multer = require("multer");
 const path = require("path");
 const stream = require("stream");
 
-const storage = multer.memoryStorage();
-const upload = multer({ storage });
+// Ensure the uploads directory exists
+const uploadDir = path.join(__dirname, "../uploads");
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
+const upload = multer({ dest: uploadDir });
 
 const router = express.Router();
 // const apiKeys = require("../gdriveapikey.json");
@@ -32,55 +36,63 @@ async function authorize() {
 
 router.post("/", upload.single("catalogs"), async (req, res) => {
   try {
-    if (!req.file || !req.file.buffer) {
-      throw new Error("No file buffer available");
+    if (!req.file || !req.file.path) {
+      throw new Error("No file uploaded");
     }
 
     const fileName = req.file.originalname;
-    // const folderId = "1aaLCO1JxGhgTNwjvHwOcsIJ7EaW8eW6D"; // Replace with your Drive folder ID
+    const filePath = req.file.path;
     const folderId = "1cpQww-7r8OUeOS1846KcJRApZ9SEFh6e";
     const authClient = await authorize();
 
-    // ✅ Ensure file buffer is correctly passed
+    // Create a read stream from the temp file on disk
+    const fileStream = fs.createReadStream(filePath);
+
     const fileResponse = await uploadFile(
       authClient,
-      req.file.buffer,
+      fileStream,
       fileName,
-      folderId
+      folderId,
+      req.file.mimetype
     );
 
     console.log("Uploaded File ID:", fileResponse.data.id);
+
+    // Clean up: delete the temp file from disk
+    fs.unlink(filePath, (err) => {
+      if (err) console.error("Error deleting temp file:", err);
+    });
+
     res.status(200).json({
       message: "File uploaded successfully",
       fileId: fileResponse.data.id,
     });
   } catch (error) {
     console.error("Error uploading file:", error.message);
+
+    // Ensure cleanup happens even on error
+    if (req.file && req.file.path) {
+      fs.unlink(req.file.path, (err) => {
+        if (err) console.error("Error deleting temp file on failure:", err);
+      });
+    }
+
     res.status(500).json({ error: "Failed to upload file" });
   }
 });
 
-async function uploadFile(authClient, fileBuffer, fileName, folderId) {
+async function uploadFile(authClient, fileStream, fileName, folderId, mimeType) {
   const drive = google.drive({ version: "v3", auth: authClient });
-
-  // ✅ Double-check buffer validity
-  if (!fileBuffer || !Buffer.isBuffer(fileBuffer)) {
-    throw new Error("Invalid file buffer");
-  }
-
-  // ✅ Convert buffer into a readable stream
-  const bufferStream = new stream.PassThrough();
-  bufferStream.end(fileBuffer);
 
   return drive.files.create({
     requestBody: {
       name: fileName,
       parents: [folderId],
-      mimeType: "application/pdf",
+      mimeType: mimeType || "application/pdf",
     },
     media: {
-      mimeType: "application/pdf",
-      body: bufferStream,
+      mimeType: mimeType || "application/pdf",
+      body: fileStream,
     },
   });
 }
