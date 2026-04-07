@@ -223,9 +223,9 @@ const CategoryCards = () => {
       const pdfBytes = await generatePDF(
         pages,
         "SHIV ENTERPRISES", // Default company name (string ✅)
-        "1st April 2024", // Date (string ✅)
-        "9958660231, 7838146412, 9717437131", // Phone number should be a string (✅ FIXED)
-        "Trademark:-Vidhata", // Hint text (string ✅)
+        "1st April 2026", // Date (string ✅)
+        "9717437131, 8294712169", // Phone number should be a string (✅ FIXED)
+        "Trademark:-Bhagya Vidhata", // Hint text (string ✅)
         0, // No price adjustment (number ✅)
         true // No price flag (boolean ✅)
       );

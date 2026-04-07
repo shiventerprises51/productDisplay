@@ -55,9 +55,9 @@ const AdminUpdateCatalog = () => {
         const pdfBytes = await generatePDF(
           pages,
           "SHIV ENTERPRISES",
-          "1st April 2024",
+          "1st April 2026",
           "9717437131, 8294712169",
-          "Trademark:-Vidhata",
+          "Trademark:-Bhagya Vidhata",
           0,
           true
         );
